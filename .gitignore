@@ -1,0 +1,63 @@
+# ============================================
+# ZeroBuild .gitignore
+# Only images/ and components.json are tracked
+# ============================================
+
+# Ignore README (kept local only)
+README.md
+
+# Ignore Firebase credentials (never push secrets)
+google-services.json
+
+# ---- React Native / Node ----
+node_modules/
+package-lock.json
+yarn.lock
+.yarn/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ---- Android build artifacts ----
+android/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# ---- iOS ----
+ios/
+Pods/
+
+# ---- Metro bundler ----
+.metro-health-check*
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ---- React Native source code ----
+src/
+App.jsx
+app.json
+babel.config.js
+metro.config.js
+index.js
+tsconfig.json
+jest.config.js
+
+# ---- Environment variables ----
+.env
+.env.*
+
+# ---- Build / Temp ----
+build/
+dist/
+tmp/
+.cache/
+__tests__/
+coverage/
